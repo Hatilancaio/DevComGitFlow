@@ -1,7 +1,9 @@
+// IMC.js
+
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
-    const pesoInput = document.querySelector('input[name="peso"]');
-    const alturaInput = document.querySelector('input[name="altura"]');
+    const form = document.getElementById('imcForm');
+    const pesoInput = document.getElementById('peso');
+    const alturaInput = document.getElementById('altura');
     const resultadoIMC = document.getElementById('resultado-imc');
     const resultadoPeso = document.getElementById('resultado-peso');
 
