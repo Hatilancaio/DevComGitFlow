@@ -1,36 +1,40 @@
+/* Style/style.css */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: "Ubuntu";
+body {
+    font-family: "Ubuntu", sans-serif;
 }
 
-header{
+header {
     position: relative;
     z-index: 5;
     background: #1d3c70;
     display: block;
 }
 
-div{
-    display:block;
+div {
+    display: block;
 }
+
 div.row {
     width: calc(100% + 30px);
     margin-left: -15px;
 }
-div.calc{
+
+div.calc {
     margin: 50px;
     position: relative;
     padding: 50px 100px;
 }
 
-input.submit {
+.submit {
     background: #fec343;
-    color:#1d3c70;
+    color: #1d3c70;
     border: none;
     width: 180px;
     height: 50px;
@@ -41,7 +45,8 @@ input.submit {
     margin-left: -90px;
     cursor: pointer;
 }
-form input{
+
+form input {
     font-weight: 900;
     display: block;
     width: 100%;
@@ -50,8 +55,9 @@ form input{
     border-bottom: 3px solid #98928e;
     margin-bottom: 15px;
     color: #847e7a;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
+
 form {
     border: 8px solid #1d3c70;
     border-radius: 16px;
@@ -62,13 +68,15 @@ form {
     background: #fff;
 }
 
-h2{
+h2 {
     margin: 0 20px;
 }
-h2.maintitle{
+
+h2.maintitle {
     text-align: center;
 }
-h1.head{
+
+h1.head {
     margin: 0 40px;
     color: #fff;
 }
@@ -77,7 +85,7 @@ p {
     margin: 0 40px;
 }
 
-span.label{
+span.label {
     position: absolute;
     top: 12px;
     left: 2px;
@@ -86,6 +94,6 @@ span.label{
     transition: all .1s ease;
 }
 
-ul{
+ul {
     list-style: none;
 }

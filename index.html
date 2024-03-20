@@ -1,41 +1,42 @@
 <!DOCTYPE html>
-<html lang=”pt-BR”>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8"/>
-<title>Document</title>
-<link rel="stylesheet" href="Style\style.css">
+<title>Calculadora de Índice de Massa Corporal</title>
+<link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
     <header>
         <h1 class="head">Sempre Bem</h1>
     </header>
     <main>
-        <br><h2 class="maintitle">Calculadora de Índice de Massa Corporal</h2>
-<!-- Lembrando q vou precisar que o front tenha dois inputs : Um para receber peso outro altura -->
+        <h2 class="maintitle">Calculadora de Índice de Massa Corporal</h2>
         <div class="calc">
-            <div>
-                <form>
-                    <h3>Informe seu peso e altura</h3>
-                    <div class="row">
-                        <div class="input"><br>
-                            <label>Peso:</label>
-                            <input type="text" maxlength= "6">
-                        </div>
-                        <div class="input">
-                            <label> Altura:</label>
-                            <input type="text" maxlength="4">
-                        </div>
-                            <input class="submit" type="submit" value="Submit">
+            <form id="imcForm">
+                <h3>Informe seu peso e altura</h3>
+                <div class="row">
+                    <div class="input">
+                        <label for="peso">Peso:</label>
+                        <input type="text" id="peso" name="peso" maxlength="6">
                     </div>
-                </form>
-            </div>
+                    <div class="input">
+                        <label for="altura">Altura:</label>
+                        <input type="text" id="altura" name="altura" maxlength="4">
+                    </div>
+                    <div id="resultado-imc"></div>
+                    <div id="resultado-peso"></div>
+                    <button type="submit" class="submit">Calcular</button>
+                </div>
+            </form>
         </div>
-        <h2>O que é o IMC?</h2><br>
-        <p>O Índice de Massa Corporal (IMC) é uma das principais ferramentas, adotada inclusive pela Organização Mundial de Saúde (OMS), para
-            calcular o chamado “peso ideal”. Obtido a partir do peso e da altura do indivíduo, o IMC também aponta níveis de magreza e obesidade,
-            que são usados para nortear o trabalho de profissionais de saúde e de educadores físicos.
-            <br>Para obter o IMC, basta dividir o seu peso (em quilos) pela altura (em metros) elevada ao quadrado (altura x altura). De acordo
-            com o indicador, o peso considerado saudável é aquele situado entre 18,5 e 24,9.</p>
+        <h2>O que é o IMC?</h2>
+        <p>O Índice de Massa Corporal (IMC) é uma das principais ferramentas, adotada inclusive pela Organização Mundial de Saúde (OMS), para calcular o chamado “peso ideal”. Obtido a partir do peso e da altura do indivíduo, o IMC também aponta níveis de magreza e obesidade, que são usados para nortear o trabalho de profissionais de saúde e de educadores físicos. Para obter o IMC, basta dividir o seu peso (em quilos) pela altura (em metros) elevada ao quadrado (altura x altura). De acordo com o indicador, o peso considerado saudável é aquele situado entre 18,5 e 24,9.</p>
+        
+        <!-- Resultado do IMC e status do peso -->
+        
     </main>
+
+    <!-- Incluindo o script JavaScript do IMC -->
+    <script src="Js/IMC.js"></script>
 </body>
 </html>
